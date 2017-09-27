@@ -51,9 +51,6 @@ def completed(request, quiz_number):
 		"quiz_number": quiz_number,
 	}
 	
-
-
-def completed(request, quiz_number):
-	return render(request, "completed.html")
+	return render(request, "completed.html", context)
 
 # Create your views here.

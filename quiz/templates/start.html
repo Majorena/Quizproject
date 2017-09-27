@@ -8,11 +8,12 @@
 	<h1>Welcome to Spain!</h1>
 
 	{% for quiz in quizzes %}
-		<p>{{ quiz.name }}</p>
-	{% endfor %}	
 
+    <p><a href="{% url 'quiz_page' quiz.quiz_number %}">
+        {{ quiz.name }}
+    </a></p>
+{% endfor %}
 <!-- <a href="Quiz.html"> Min quiz </a>
-
 			<p>Executive Search:<br> -->
 			<ul>
 				<li>Attraherar de bästa </li>
