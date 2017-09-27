@@ -5,11 +5,15 @@
 		<meta chartset="utf-8">
 	</head>
 	<body>
-		<h1>Välkommen till min quiz!</h1>
+	<h1>Welcome to Spain!</h1>
 
-<a href="Quiz.html"> Min quiz </a>
+	{% for quiz in quizzes %}
+		<p>{{ quiz.name }}</p>
+	{% endfor %}	
 
-			<p>Executive Search:<br>
+<!-- <a href="Quiz.html"> Min quiz </a>
+
+			<p>Executive Search:<br> -->
 			<ul>
 				<li>Attraherar de bästa </li>
 				<li>Arbetar med alla branscher</li>
