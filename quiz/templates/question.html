@@ -10,40 +10,25 @@
 	<p>{{ answer2 }}</p>
 	<p>{{ answer3 }}</p>
 
-			<p>Executive Search:<br>
-			<ul>
-				<li>Attraherar de bästa </li>
-				<li>Arbetar med alla branscher</li>
-				<li>Har de bästa rekommendationerna</li>
-			</ul>
-			<h2> Marcela M Eneroth: </h2>
-			<img src = "marcela intervju.jpg" alt = "Marcela intervju">
+						
 			</p>
-	<form>
-  		<input type="radio" name="service" value="executive search"> Executive search<br>
-  <input type="radio" name="service" value="annonserad rekrytering">Rekrytering<br>
-  <input type="radio" name="service" value="second opinion">Second opinion
-</form>
-<form action="/action_page.php">
-  First name:<br>
-  <input type="text" name="name" value="Marcela">
-  <br>
-  Last name:<br>
-  <input type="text" name="email" value="M Eneroth">
-  <br><br>
-  <input type="submit" value="Submit">
-</form> 
+	<form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
+ 		{% csrf_token %}
+	<input type="radio" name="answer" value="1"> {{ answer1 }}
+	<input type="radio" name="answer" value="2"> {{ answer1 }}
+	<input type="radio" name="answer" value="3"> {{ answer1 }}
+	</form>
+	
+   <img src = "marcela intervju.jpg" alt = "Marcela intervju">
 
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+
+<input type="radio" name="answer" value="1"> {{ answer1 }}
+Ändra så att alla radioknappar har name="answer" och att den första har value="1", den andra value="2", osv
 
 
 	</body>
 </html>
-
-
-
-
-
 
 
 
