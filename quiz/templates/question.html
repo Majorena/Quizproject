@@ -3,30 +3,23 @@
 	<head>
 		<title> Hemsida Marcela </title>
 		<meta chartset="utf-8">
+		<link href="/static/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<h1>{{ question_number }}. {{ question }}</h1>
-	<p>{{ answer1 }}</p>
-	<p>{{ answer2 }}</p>
-	<p>{{ answer3 }}</p>
-
-						
-			</p>
-	<form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
+							
+				<form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
  		{% csrf_token %}
 	<input type="radio" name="answer" value="1"checked> {{ answer1 }}
-	<input type="radio" name="answer" value="2"> {{ answer1 }}
-	<input type="radio" name="answer" value="3"> {{ answer1 }}
+	<input type="radio" name="answer" value="2"> {{ answer2 }}
+	<input type="radio" name="answer" value="3"> {{ answer3 }}
 	<button type="submit">Nästa</button>
 
 	</form>
 	
-   <img src = "marcela intervju.jpg" alt = "Marcela intervju">
+   <img src = "/static/marcela intervju.jpg" alt = "Marcela intervju">
 
 
-
-<input type="radio" name="answer" value="1"> {{ answer1 }}
-Ändra så att alla radioknappar har name="answer" och att den första har value="1", den andra value="2", osv
 
 
 	</body>

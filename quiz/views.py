@@ -29,6 +29,7 @@ def question(request, quiz_number, question_number):
 	   	"quiz": quiz,
 		"quiz_number": quiz_number,
 	}
+	return render(request, "question.html", context)
 
 def answer(request, quiz_number, question_number):
 	answer = request.POST["answer"]
@@ -57,4 +58,6 @@ def completed(request, quiz_number):
   	"total": num_questions,
     }
 	return render(request, "completed.html", context)
+
+
 

@@ -3,30 +3,16 @@
 	<head>
 		<title> Hemsida Marcela </title>
 		<meta chartset="utf-8">
+		<link href="/static/style.css" rel="stylesheet">
 	</head>
 	<body>
-		<h1>När du behöver digitalisera!</h1>
 		<h1>{{ quiz.name }}</h1>
 		<p>{{ quiz.description }}</p>
 
 <p><a href="{% url 'question_page' quiz_number 1 %}">
     Start
 </a></p>
-
-			<p>Executive Search:<br>
-			<ul>
-				<li>Attraherar de bästa </li>
-				<li>Arbetar med alla branscher</li>
-				<li>Har de bästa rekommendationerna</li>
-			</ul>
-			<h2> Marcela M Eneroth: </h2>
-			<img src = "marcela intervju.jpg" alt = "Marcela intervju">
-			</p>
-	<form>
-  		<input type="radio" name="service" value="executive search"> Executive search<br>
-  <input type="radio" name="service" value="annonserad rekrytering">Rekrytering<br>
-  <input type="radio" name="service" value="second opinion">Second opinion
-</form>
+<!-- 		
 <form action="/action_page.php">
   First name:<br>
   <input type="text" name="name" value="Marcela">
@@ -35,10 +21,7 @@
   <input type="text" name="email" value="M Eneroth">
   <br><br>
   <input type="submit" value="Submit">
-</form> 
-
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
-
+</form>  -->
 
 	</body>
 </html>

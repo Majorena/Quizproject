@@ -1,3 +1,20 @@
+
+body {   
+font-size: 25pt;
+font-family;
+color: gold;
+text-align: center;
+background-image: url("/static/seville-spain-Sevilla.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+text-align-last: center;
+}
+
 h1{
-	color:red;
+	color: black;
+	font-size: 15pt;
+}
+h2{
+	color: black;
+	font-size: 10pt;
 }

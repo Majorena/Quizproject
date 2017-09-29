@@ -21,3 +21,6 @@ class Question(models.Model):
 
 	def __str__(self):
 		return self.quiz.name + " / " + self.question
+
+
+		
